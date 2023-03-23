@@ -1,0 +1,217 @@
+:root {
+  --prime-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
+  --text-color: #434455;
+  --primary-brand-color: #4d5ae5;
+  --dark-color: #2e2f42;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --pressed-state-color: #404bbf;
+  --white-color: #ffffff;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--text-color);
+  font-family: var(--prime-font);
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+/* ==========HEADER========= */
+
+.logo-page {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+.text-logo {
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+.contact {
+  font-style: normal;
+}
+.menu-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.main-contact {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+/* ==========/HEADER========= */
+
+/* ===========HERO=========== */
+.model-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  background: var(--primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+}
+.hero {
+  background: var(--dark-color);
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  text-align: center;
+}
+/* ===========/HERO=========== */
+
+/* ===========FEATURE==========*/
+
+.title-feature {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+.sub-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+/* ===========/FEATURE==========*/
+
+/*==========SECTION ABOUT ======*/
+.title-about {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--dark-color);
+}
+/*==========/SECTION ABOUT ======*/
+/*==========/TEAM/==========*/
+.font {
+  background-color: var(--light-color);
+}
+
+.font-list {
+  background-color: var(--white-color);
+}
+
+/*==============FOOTER============*/
+.text-footer {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.footer {
+  background: var(--dark-color);
+}
+.text-logo-footer {
+  color: var(--light-color);
+}
+/*==============/FOOTER============*/
+
+/* +++++++++++++++++++++++++++PORTFOLIO++++++++++++++++++++++++ */
+.button-filter {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+  background: var(--light-color);
+  border: 1px solid var(--accent-color);
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.progect-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--white-color);
+  background: var(--pressed-state-color);
+  }
+
+.model-button:hover,
+.model-button:focus {
+  background: var(--pressed-state-color);
+}
+
+.sub-text-progect {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--pressed-state-color);
+}
+.main-contact:hover,
+.main-contact:focus {
+  color: var(--pressed-state-color);
+}
