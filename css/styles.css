@@ -10,6 +10,25 @@
   --white-color: #ffffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul
+ {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
 body {
   background-color: var(--white-color);
   color: var(--text-color);
@@ -22,24 +41,18 @@ body {
 .link {
   text-decoration: none;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+
+.container {
+  width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-img {
-  display: block;
+
+.containers {
+width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* ==========HEADER========= */
@@ -119,6 +132,10 @@ img {
 /* ===========/HERO=========== */
 
 /* ===========FEATURE==========*/
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .title-feature {
   font-weight: 500;
