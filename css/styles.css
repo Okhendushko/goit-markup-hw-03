@@ -20,8 +20,7 @@ h6 {
   margin: 0;
 }
 
-ul
- {
+ul {
   margin: 0;
   padding-left: 0;
 }
@@ -37,27 +36,56 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  bottom: 0;
 }
 .link {
   text-decoration: none;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
-  width: 1470px;
+  width: 1188px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin: 0;
+  border: 2px solid red;
+}
+/*============HEADER============*/
+
+.heder-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.containers {
-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+.navigation-page {
+  display: flex;
 }
 
-/* ==========HEADER========= */
+.menu {
+  display: flex;
+}
+
+.menu-items:not(:last-child) {
+  margin-right: 40px;
+}
+
+.pirs {
+  display: flex;
+  margin-left: 332;
+  margin-right: 156px;
+  gap: 40px;
+}
 
 .logo-page {
+  display: flex;
+  display: block;
+  padding: 25.5px 0 25.5px 157px;
+  margin-right: 76px;
   font-family: var(--second-font);
   font-weight: 800;
   font-size: 18px;
@@ -79,13 +107,7 @@ width: 1158px;
 }
 .contact {
   font-style: normal;
-}
-.menu-link {
-  color: var(--dark-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  display: block;
 }
 
 .main-contact {
@@ -94,9 +116,49 @@ width: 1158px;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
+.main-contact:hover,
+.main-contact:focus {
+  color: var(--pressed-state-color);
+}
+
+.menu-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--pressed-state-color);
+}
+
 /* ==========/HEADER========= */
 
 /* ===========HERO=========== */
+
+.hero {
+  background: var(--dark-color);
+  padding: 168px 0;
+  width: 1188px;
+  text-align: center;
+}
+.main-title {
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+
 .model-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -105,45 +167,39 @@ width: 1158px;
   letter-spacing: 0.04em;
   color: var(--white-color);
   background: var(--primary-brand-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  padding: 16px 32px;
+  border: none;
   cursor: pointer;
 }
 
-.text-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: var(--white-color);
+.model-button:hover,
+.model-button:focus {
+  background: var(--pressed-state-color);
 }
-.hero {
-  background: var(--dark-color);
-}
-.main-title {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  color: var(--white-color);
-  text-align: center;
-}
+
 /* ===========/HERO=========== */
 
 /* ===========FEATURE==========*/
+
 .about {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.about-list {
+  display: flex;
 }
 
 .title-feature {
+  padding-top: 32px;
+  padding-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
 }
+
 .sub-text {
   font-size: 16px;
   line-height: 1.5;
@@ -153,7 +209,13 @@ width: 1158px;
 /* ===========/FEATURE==========*/
 
 /*==========SECTION ABOUT ======*/
+
+.bodun {
+  margin-bottom: 120px;
+}
+
 .title-about {
+  padding-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -162,10 +224,44 @@ width: 1158px;
   text-align: center;
   color: var(--dark-color);
 }
+
+.list-about {
+  display: flex;
+  gap: 24px;
+  }
+
+
 /*==========/SECTION ABOUT ======*/
+
 /*==========/TEAM/==========*/
+
+
+.pinc {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
 .font {
+  padding-bottom: 120px;
   background-color: var(--light-color);
+}
+
+.title-font {
+  padding-top: 120px;
+  padding-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+.font-team {
+  padding-bottom: 120px;
+  display: flex;
+  gap: 24px;
 }
 
 .font-list {
@@ -173,21 +269,55 @@ width: 1158px;
 }
 
 /*==============FOOTER============*/
-.text-footer {
+
+.footer {
+  padding: 100px 0;
+
+
+}
+.logo-page-footer{
+ padding-left: 156px;
+  font-family: var(--second-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+.text-footer
+{
+   margin-top: 17.5px;
+  margin-bottom: 100px;
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
 .footer {
   background: var(--dark-color);
 }
+
 .text-logo-footer {
   color: var(--light-color);
 }
+
 /*==============/FOOTER============*/
 
 /* +++++++++++++++++++++++++++PORTFOLIO++++++++++++++++++++++++ */
+
+.point {
+  margin-bottom: 120px;
+}
+
+.line {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
 .button-filter {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -202,6 +332,16 @@ width: 1158px;
   cursor: pointer;
 }
 
+.button-filter:hover,
+.button-filter:focus {
+  color: var(--white-color);
+  background: var(--pressed-state-color);
+}
+
+.buda {
+  margin-bottom: 120px;
+}
+
 .progect-card-title {
   font-weight: 500;
   font-size: 20px;
@@ -210,29 +350,10 @@ width: 1158px;
   color: var(--dark-color);
 }
 
-.button-filter:hover,
-.button-filter:focus {
-  color: var(--white-color);
-  background: var(--pressed-state-color);
-  }
-
-.model-button:hover,
-.model-button:focus {
-  background: var(--pressed-state-color);
-}
-
 .sub-text-progect {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-}
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--pressed-state-color);
-}
-.main-contact:hover,
-.main-contact:focus {
-  color: var(--pressed-state-color);
 }
