@@ -24,6 +24,13 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+  button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px; 
+}
+
 img {
   display: block;
 }
@@ -54,7 +61,7 @@ body {
   margin: 0;
   border: 2px solid red;
 }
-/*============HEADER============*/
+/*----------------HEADER----------------*/
 
 .heder-conteiner {
   display: flex;
@@ -138,9 +145,9 @@ body {
   color: var(--pressed-state-color);
 }
 
-/* ==========/HEADER========= */
+/*--------------HEADER--------------*/
 
-/* ===========HERO=========== */
+/*---------------HERO-------------- */
 
 .hero {
   background: var(--dark-color);
@@ -167,6 +174,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--white-color);
   background: var(--primary-brand-color);
+  margin: auto;
   padding: 16px 32px;
   border: none;
   cursor: pointer;
@@ -177,9 +185,9 @@ body {
   background: var(--pressed-state-color);
 }
 
-/* ===========/HERO=========== */
+/*---------------HERO---------------*/
 
-/* ===========FEATURE==========*/
+/*--------------FEATURE------------*/
 
 .about {
   margin-top: 120px;
@@ -206,9 +214,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-/* ===========/FEATURE==========*/
+/* -------------FEATURE--------------*/
 
-/*==========SECTION ABOUT ======*/
+/*-----------SECTION ABOUT------------*/
 
 .bodun {
   margin-bottom: 120px;
@@ -231,9 +239,9 @@ body {
   }
 
 
-/*==========/SECTION ABOUT ======*/
+/*------------SECTION ABOUT----------*/
 
-/*==========/TEAM/==========*/
+/*---------------TEAM---------------*/
 
 
 .pinc {
@@ -268,15 +276,20 @@ body {
   background-color: var(--white-color);
 }
 
-/*==============FOOTER============*/
+/*--------------FOOTER--------------*/
 
 .footer {
+   width: 1188px;
   padding: 100px 0;
+}
 
-
+.foot {
+  display: flex;
+  flex-direction: column;
+  padding-left: 156px;
 }
 .logo-page-footer{
- padding-left: 156px;
+
   font-family: var(--second-font);
   font-weight: 800;
   font-size: 18px;
@@ -288,9 +301,8 @@ body {
 }
 .text-footer
 {
+   width: 264px;
    margin-top: 17.5px;
-  margin-bottom: 100px;
-  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -305,41 +317,46 @@ body {
   color: var(--light-color);
 }
 
-/*==============/FOOTER============*/
+/*---------------FOOTER-------------*/
 
-/* +++++++++++++++++++++++++++PORTFOLIO++++++++++++++++++++++++ */
+/* ------------PORTFOLIO------------*/
 
-.point {
-  margin-bottom: 120px;
-}
 
-.line {
+
+.line-button {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  margin-top: 96px;
   margin-bottom: 72px;
+  gap: 24px;
 }
 
-.button-filter {
-  font-family: "Roboto", sans-serif;
+.button-point {
+  font-family: var(--prime-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
-  background: var(--light-color);
-  border: 1px solid var(--accent-color);
-  border: transparent;
-  border-radius: 4px;
-  cursor: pointer;
+  background-color: var(--light-color);
+  padding: 12px 24px;
 }
 
-.button-filter:hover,
-.button-filter:focus {
+.button-point:hover,
+.button-point:focus {
   color: var(--white-color);
   background: var(--pressed-state-color);
 }
 
-.buda {
+.container-produkt {
   margin-bottom: 120px;
+}
+
+.produkt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .progect-card-title {
