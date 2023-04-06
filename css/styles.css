@@ -57,13 +57,18 @@ body {
 }
 
 .container {
-  width: 1188px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 /*----------------HEADER----------------*/
+.header-page {
+border-bottom: 1px solid #e7e9fc;
+}
+
 
 .heder-conteiner {
   display: flex;
@@ -85,15 +90,13 @@ body {
 
 .pirs {
   display: flex;
-  margin-left: 332;
-  margin-right: 156px;
-  gap: 40px;
+   gap: 40px;
 }
 
 .logo-page {
   display: flex;
   display: block;
-  padding: 25.5px 0 25.5px 157px;
+  padding: 24px 0;
   margin-right: 76px;
   font-family: var(--second-font);
   font-weight: 800;
@@ -153,8 +156,7 @@ body {
 
 .hero {
   background: var(--dark-color);
-  padding: 168px 0;
-  width: 1188px;
+  padding: 188px 0;
   text-align: center;
 }
 .main-title {
@@ -192,17 +194,18 @@ body {
 /*--------------FEATURE------------*/
 
 .about {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .about-list {
   display: flex;
+  gap: 24px;
 }
 
 .title-feature {
-  padding-top: 32px;
-  padding-bottom: 8px;
+
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -221,11 +224,11 @@ body {
 /*-----------SECTION ABOUT------------*/
 
 .bodun {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .title-about {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -246,19 +249,16 @@ body {
 /*---------------TEAM---------------*/
 
 
-.pinc {
-  padding-top: 32px;
-  padding-bottom: 8px;
-}
 
 .font {
+  padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--light-color);
 }
 
 .title-font {
-  padding-top: 120px;
-  padding-bottom: 72px;
+  
+ margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -268,10 +268,14 @@ body {
   color: var(--dark-color);
 }
 
+.font-card {
+padding-top: 32px;
+padding-bottom: 32px;
+}
 .font-team {
-  padding-bottom: 120px;
   display: flex;
   gap: 24px;
+   text-align: center;
 }
 
 .font-list {
@@ -281,15 +285,9 @@ body {
 /*--------------FOOTER--------------*/
 
 .footer {
-   width: 1188px;
-  padding: 100px 0;
+    padding: 100px 0;
 }
 
-.foot {
-  display: flex;
-  flex-direction: column;
-  padding-left: 156px;
-}
 .logo-page-footer{
 
   font-family: var(--second-font);
@@ -329,7 +327,7 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-top: 96px;
+ 
   margin-bottom: 72px;
   gap: 24px;
 }
@@ -351,9 +349,6 @@ body {
   background: var(--pressed-state-color);
 }
 
-.container-produkt {
-  margin-bottom: 120px;
-}
 
 .produkt {
   display: flex;
@@ -361,7 +356,15 @@ body {
   gap: 48px 24px;
 }
 
+.link-card {
+  border: 1px solid #E7E9FC;
+  border-top: none;
+  padding: 32px 0;
+  padding-left: 16px;
+}
+
 .progect-card-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
